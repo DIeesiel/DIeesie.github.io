@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>System GP</title>
+	<style>
+		body {
+			background-image: url(https://cdn.pixabay.com/photo/2020/06/19/06/46/light-5315917_960_720.jpg);
+			font-family: Arial, sans-serif;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+
+		h1 {
+			color: #00050a;
+			margin-bottom: 30px;
+		}
+
+		form {
+			background-color: #fff;
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+			width: 400px;
+			max-width: 90%;
+		}
+
+		input[type="text"],
+		input[type="password"] {
+			padding: 10px;
+			border: none;
+			border-bottom: 2px solid #ccc;
+			width: 100%;
+			margin-bottom: 20px;
+			font-size: 16px;
+			color: #555252;
+		}
+
+		input[type="submit"] {
+			background-color: #7ba605;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #84d904;
+		}
+
+		.register {
+			margin-top: 20px;
+			font-size: 14px;
+			color: #999;
+		}
+
+		.register a {
+			color: #200a04;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Faça seu Login</h1>
+		<form>
+			<label for="username">Usuário:</label>
+			<input type="text" id="username" name="username" required>
+
+			<label for="password">Senha:</label>
+			<input type="password" id="password" name="password" required>
+
+			<input type="submit" value="Entrar">
+		</form>
+		<div class="register">
+			<p>Não tem um cadastro? <a href="Cadastro.html" id="cadastro-btn">Cadastrar</a></p>
+		</div>
+	</div>
+</body>
+</html>
